@@ -1,0 +1,26 @@
+/* .test{
+    background-color: skyblue;
+    color: white;
+    width: 100%;
+
+}
+@keyframes show-bars{
+    100%{
+        transform: translateY(0);
+    }
+}
+.bar{
+    transform: translateY(50px);
+    animation: show-bars 0.5s ease forwards;
+    animation-delay: calc(0.1s * var(--i));
+}
+ */
+@keyframes rise {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
