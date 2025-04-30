@@ -1,11 +1,11 @@
 
-import Header from "./build/Header";
-import About  from './build/About';
-import Services from "./build/Services";
-import Testimonials from "./build/Testimonials";
-import Contact from "./build/Contact";
-import Ending from "./build/End";
-import AnimationBars from "./build/Animation";
+import Header from "./Header";
+import About  from './About';
+import Services from "./Services";
+import Testimonials from "./Testimonials";
+import Contact from "./Contact";
+import Ending from "./End";
+import AnimationBars from "./Animation";
 
 function App2() {
   return (

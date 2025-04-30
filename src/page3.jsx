@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import StairsLoader from './page2.jsx';
-import Header from './build/Header.jsx';
-import About from './build/About.jsx';
-import Services from './build/Services.jsx';
-import Testimonials from './build/Testimonials.jsx';
-import Contact from './build/Contact.jsx';
-import Ending from './build/End.jsx';
+import Header from './Header.jsx';
+import About from './About.jsx';
+import Services from './Services.jsx';
+import Testimonials from './Testimonials.jsx';
+import Contact from './Contact.jsx';
+import Ending from './End.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
