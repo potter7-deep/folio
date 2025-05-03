@@ -17,23 +17,23 @@ import { SiKotlin } from "react-icons/si";
 
 
 function Skills(){
-    const openTab = (event, tabName) => {
+    // const openTab = (event, tabName) => {
         // Get all tab links and tab contents
-        const tabLinks = document.querySelectorAll(".tab-links");
-        const tabContents = document.querySelectorAll(".tab-contents");
+    //     const tabLinks = document.querySelectorAll(".tab-links");
+    //     const tabContents = document.querySelectorAll(".tab-contents");
 
-        // Remove "active-link" class from all tab links
-        tabLinks.forEach((tabLink) => tabLink.classList.remove("active-link"));
+    //     // Remove "active-link" class from all tab links
+    //     tabLinks.forEach((tabLink) => tabLink.classList.remove("active-link"));
 
-        // Remove "active-content" class from all tab contents
-        tabContents.forEach((tabContent) =>
-            tabContent.classList.remove("active-content")
-        );
+    //     // Remove "active-content" class from all tab contents
+    //     tabContents.forEach((tabContent) =>
+    //         tabContent.classList.remove("active-content")
+    //     );
 
-        // Add "active-link" to the clicked tab and "active-content" to the corresponding content
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabName).classList.add("active-content");
-    };
+    //     // Add "active-link" to the clicked tab and "active-content" to the corresponding content
+    //     event.currentTarget.classList.add("active-link");
+    //     document.getElementById(tabName).classList.add("active-content");
+    // };
 
     return(
         <>

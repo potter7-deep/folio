@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import StairsLoader from './loading-Animation.jsx';
+import StairsLoader from './Loading-Animation.jsx';
 import Header from './Header.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
