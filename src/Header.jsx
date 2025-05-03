@@ -5,10 +5,10 @@ import Desktop from './Desktop';
 function Header(){
     return(
         <>
-            <header class="backdrop-blur-md sticky pb-[10px] pt-[10px] pl-[7px] pr-[7px] top-0 z-10 max-w-full">
-                <section class="max-w-full mx-auto flex justify-between items-center">
-                    <h1 class="text-4xl font-bold cursor-pointer">
-                        <a href="#hero" className='text-teal-300 dark:text-sky-300'>Dan.</a>
+            <header className="rounded bg-white dark:bg-black shadow-xl shadow-teal-100 dark:shadow-gray-900 sticky pb-[10px] pt-[10px] pl-[7px] pr-[7px] top-0 z-10 max-h-full max-w-full">
+                <section className="max-w-full mx-auto flex justify-between items-center">
+                    <h1 className="text-4xl font-bold cursor-pointer">
+                        <a href="#hero" className='text-teal-600 dark:text-sky-300 pl-[10px]'>Dan Maina.</a>
                     </h1>
                     <Desktop/>
                 </section>

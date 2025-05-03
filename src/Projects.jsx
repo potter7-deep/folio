@@ -3,7 +3,7 @@ import image2 from './IMG/web2.jpg';
 import image3 from './IMG/web3.jpg';
 
 
-function Services() {
+function Projects() {
 
     return(
         <>
@@ -14,9 +14,9 @@ function Services() {
             </section>
 
             <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-                <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
+                <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
                     <img src={image1} alt="Explore" className="w-1/2 h-1/6 mb-6 animated-box"/>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
                         Logo tech LTD.
                     </h3>
                     <p class="hidden md:block text-xl text-center mt-2 text-slate-500 dark:text-slate-400">
@@ -28,9 +28,9 @@ function Services() {
                         Affordable logo tech LTD website.
                     </p>
                 </li>
-                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
                     <img src={image2} alt="Adventure" class="w-1/2 h-1/6 mb-6 animated-box"/>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
                         Adventures ORG.
                     </h3>
                     <p class="hidden sm:block text-xl text-center mt-2 text-slate-500 dark:text-slate-400">
@@ -41,9 +41,9 @@ function Services() {
                         Responsive website for Adventures ORG!
                     </p>
                 </li>
-                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
                     <img src={image3} alt="Infinity" class="w-1/2 h-1/6 mb-6 animated-box"/>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
                         Log-in page.
                     </h3>
                     <p class="hidden sm:block text-xl text-center mt-2 text-slate-500 dark:text-slate-400">
@@ -60,4 +60,4 @@ function Services() {
     );
 }
 
-export default Services;
+export default Projects;

@@ -28,7 +28,7 @@ function Ending(){
                         <a href="#contact" class="hover:opacity-90">Contact me</a>
                     </nav>
                     <div class="flex flex-col items-center sm:gap-2">
-                        <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+                        <p class="text-right">Copyright &copy; <span id="year">2025</span></p>
                         <p class="text-right">All Rights Reserved</p>
                     </div>
                 </section>

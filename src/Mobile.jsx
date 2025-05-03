@@ -1,9 +1,10 @@
 
+import './Skills.css'
 
 
 function Mobile(){
     return(
-        <section id="mobile-menu" className="absolute top-0 pt-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+        <section id="mobile-menu" className="animate-menu absolute top-0 pt-0 bg-black w-full text-5xl flex-col justify-center origin-top hidden">
             <button className="text-8xl self-end">
                 &times;
             </button>
