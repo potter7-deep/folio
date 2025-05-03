@@ -71,9 +71,9 @@ function About(){
                 
             </article>
             <div className="home-img">
-                <div className="relative flex justify-center items-center overflow-hidden w-[35vw] h-[35vw] bg-white dark:bg-black rounded-2xl p-[7px] mix-blend-lighten">
+                <div className="relative flex justify-center items-center overflow-hidden w-[35vw] h-[35vw] bg-white dark:bg-black rounded-full p-[7px] mix-blend-lighten">
                     <div className="img-item relative flex justify-center overflow-hidden w-full h-full bg-white dark:bg-black bg-cover z-1">
-                        <img src={myImage} alt="Dan Maina's Image" className="bg-white dark:bg-black rounded-[200px] hover:cursor-pointer"/>
+                        <img src={myImage} alt="Dan Maina's Image" className="bg-white dark:bg-black rounded-full hover:cursor-pointer"/>
                     </div>
                 </div>
             </div>
