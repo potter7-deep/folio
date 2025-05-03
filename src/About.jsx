@@ -1,6 +1,6 @@
 import myImage from './IMG/image.png'
 import Change from './Change.jsx'
-import Buttons from './Buttons';
+import Buttons from './Buttons.jsx';
 import {Typewriter} from 'react-simple-typewriter';
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";

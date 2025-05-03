@@ -37,7 +37,6 @@ function Skills(){
 
     return(
         <>
-        <h3> Lets go for a <FaBeer />? </h3>
         <main className="">
             <section id="skills" className="p-6 my-12 scroll-mt-20">
                 <h2 className="text-4xt font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
