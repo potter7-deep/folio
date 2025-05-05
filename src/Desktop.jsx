@@ -43,7 +43,7 @@ function Desktop(){
                     <a href="#footer" className="hover:opacity-90 pr-[10px]">Legal</a>
                 </nav> */}
                  <nav
-                    className={` top-16 left-0 w-full bg-white dark:bg-black p-5 shadow-lg transition-transform duration-300 md:block md:left-0 
+                    className={` top-16 left-0 w-full bg-white dark:bg-black p-5 transition-transform duration-300 md:block md:left-0 
                                 ${isOpen ? "block" : "hidden"}`}
                     >
                     <ul className="space-y-4 text-teal-600 dark:text-sky-300 flex flex-col text-xl md:flex-row md:space-x-8 md:space-y-0">
