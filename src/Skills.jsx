@@ -92,21 +92,21 @@ function Skills(){
             </section>
 
             <section className="dark:text-slate-500">
-            <div className="flex sm:flex-row justify-center gap-9 sm:gap-16 text-3xl">
+            <div className="flex sm:flex-row justify-center gap-7 sm:gap-10 text-2xl">
                 <div className=''>
-                <p className="dark:slate-700 px-4 py-2 dark:border-solid mb-7 rounded hover:border-0 hover:dark:bg-sky-300 dark:hover:text-black hover:dark:shadow-teal-300 hover:cursor-pointer w-40 active-link bg-teal-500 text-white hover:shadow-xl dark:bg-sky-300 dark:text-black">
+                <p className="dark:slate-700 pl-[5px] dark:border-solid mb-7 rounded hover:border-0 hover:dark:bg-sky-300 dark:hover:text-black hover:dark:shadow-teal-300 hover:cursor-pointer active-link bg-teal-500 text-white hover:shadow-xl dark:bg-sky-300 dark:text-black">
                     Education
                 </p>
                     <div className="active-content text-xl mb-6" id="education">
                         <ul>
-                            <li className="list-king"><p className="dark:text-sky-300 text-slate-500 text-2xl">2024 - Current</p><p>Dedan Kimathi University of Technology.</p></li>
-                            <li className="list-king"><p className="dark:text-sky-300 text-slate-500 text-2xl">2020 - 2023</p><p>Kapenguria School.</p></li>
-                            <li className="list-king"><p className="dark:text-sky-300 text-slate-500 text-2xl">2008 - 2019</p><p>S.T Stephen's ACK Primary School.</p></li>
+                            <li className="list-king"><p className="dark:text-sky-300 text-slate-500">2024 - Current</p><p>Dedan Kimathi University of Technology.</p></li>
+                            <li className="list-king"><p className="dark:text-sky-300 text-slate-500">2020 - 2023</p><p>Kapenguria School.</p></li>
+                            <li className="list-king"><p className="dark:text-sky-300 text-slate-500">2008 - 2019</p><p>S.T Stephen's ACK Primary School.</p></li>
                         </ul>
                     </div>
                 </div>
                 <div>
-                <p className="dark:slate-700 px-4 py-2 dark:border-solid mb-7 rounded hover:shadow-xl hover:border-0 hover:dark:bg-sky-300 dark:hover:text-black hover:dark:shadow-teal-300 relative hover:cursor-pointer active-link w-43 bg-teal-500 text-white dark:bg-sky-300 dark:text-black" onclick="{()=>openTab('experience')}">
+                <p className="dark:slate-700 pl-[5px] dark:border-solid mb-7 rounded hover:shadow-xl hover:border-0 hover:dark:bg-sky-300 dark:hover:text-black hover:dark:shadow-teal-300 relative hover:cursor-pointer active-link bg-teal-500 text-white dark:bg-sky-300 dark:text-black">
                     Experience
                 </p>
                     <div className="flex justify-center items-center text-xl mb-6" id="experience">
@@ -120,7 +120,7 @@ function Skills(){
             
             </section>
 
-            <section className="flex justify-center items-center gap-4 mt-16 text-5xl flex-col sm:flex-row">
+            <section className="text-5xl flex-wrap flex flex-row justify-center gap-4 lg-p-2 mb-12">
                 <div>
                     <h1 className='text-teal-700 dark:text-sky-300 items-center hover:cursor-pointer hover:bg-teal-700 hover:text-white hover:dark:bg-sky-300 hover:dark:text-black rounded-full p-2 hover:shadow-xl hover:shadow-teal-600'><FaHtml5 /></h1>
                 </div>
