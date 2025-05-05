@@ -9,6 +9,9 @@ import Ending from './End.jsx';
 import Skills from './Skills.jsx';
 
 function App() {
+
+    document.title = "DAN MAINA | PORTFOLIO."; 
+
   const [loading, setLoading] = useState(true);
 
   return (
