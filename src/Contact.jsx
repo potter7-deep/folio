@@ -9,7 +9,7 @@ function Contact(){
         <>
             <section id="contact" className="p-6 my-12 scroll-mt-16">
                 <h2 className="text-4xt font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
-                    Contact Us
+                    Contact Me
                 </h2>
                 <form action="" className="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4">
                     <label for="subject" className="dark:text-slate-400">Subject:</label>
