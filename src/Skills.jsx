@@ -14,6 +14,8 @@ import { FaReact } from "react-icons/fa";
 import { FaJava } from "react-icons/fa6";
 import { FaSwift } from "react-icons/fa6";
 import { SiKotlin } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+
 
 
 function Skills(){
@@ -162,6 +164,9 @@ function Skills(){
                 </div>
                 <div>
                     <h1 className='text-teal-700 dark:text-sky-300 items-center hover:cursor-pointer hover:bg-teal-700 hover:text-white hover:dark:bg-sky-300 hover:dark:text-black rounded-full p-2 hover:shadow-xl hover:shadow-teal-600'><SiKotlin /></h1>
+                </div>
+                <div>
+                    <h1 className='text-teal-700 dark:text-sky-300 items-center hover:cursor-pointer hover:bg-teal-700 hover:text-white hover:dark:bg-sky-300 hover:dark:text-black rounded-full p-2 hover:shadow-xl hover:shadow-teal-600'><SiMysql /></h1>
                 </div>
             </section>
         </main>

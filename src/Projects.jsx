@@ -1,4 +1,4 @@
-import image1 from './IMG/web1.jpg';
+import image1 from './IMG/DATA.png';
 import image2 from './IMG/web2.jpg';
 import image3 from './IMG/web3.jpg';
 
