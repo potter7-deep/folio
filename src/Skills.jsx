@@ -43,7 +43,7 @@ function Skills(){
         <>
         <main className="">
             <section id="skills" className="p-6 my-12 scroll-mt-20">
-                <h2 className="text-4xt font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                <h2 className="skills-title text-4xt font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                     My Skills
                 </h2>
             </section>
@@ -98,7 +98,7 @@ function Skills(){
             <section className="dark:text-slate-500">
             <div className="flex sm:flex-row justify-center gap-7 sm:gap-10 text-2xl">
                 <div className=''>
-                <p className="dark:slate-700 pl-[5px] dark:border-solid mb-7 rounded hover:border-0 hover:dark:bg-sky-300 dark:hover:text-black hover:dark:shadow-teal-300 hover:cursor-pointer active-link bg-teal-500 text-white hover:shadow-xl dark:bg-sky-300 dark:text-black">
+                <p className="dark:slate-700 pl-[5px] dark:border-solid mb-7 rounded hover:shadow-xl hover:border-0 hover:dark:bg-sky-300 dark:hover:text-black hover:dark:shadow-teal-300 relative hover:cursor-pointer active-link bg-teal-500 text-white dark:bg-sky-300 dark:text-black">
                     Education
                 </p>
                     <div className="active-content text-xl mb-6" id="education">

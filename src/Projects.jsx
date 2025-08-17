@@ -14,7 +14,7 @@ function Projects() {
             </section>
 
             <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-                <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
+                <li className="w-2/3 sm:w-5/6 hover:cursor-pointer flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
                     <img src={image1} alt="Explore" className="w-1/2 h-1/6 mb-6 animated-box"/>
                     <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
                         Logo tech LTD.
@@ -27,8 +27,11 @@ function Projects() {
                     <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400" >
                         Affordable logo tech LTD website.
                     </p>
+                    <button className="bg-teal-700 dark:bg-black  mt-10 dark:border dark:text-sky-300 hover:bg-white hover:border-[2px] dark:hover:border-0 hover:w-54 hover:shadow-2xl hover:shadow-teal-600 hover:border-solid hover:border-teal-700 hover:text-teal-700 hover:dark:bg-sky-300 hover:dark:text-black  active:bg-cyan-400 text-white p-3 w-52 rounded-xl border dark:border-solid dark:border-sky-300 justify-center items-center text-3xl hover:cursor-pointer">
+                        check it out
+                    </button>
                 </li>
-                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
+                <li class="w-2/3 sm:w-5/6 hover:cursor-pointer flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
                     <img src={image2} alt="Adventure" class="w-1/2 h-1/6 mb-6 animated-box"/>
                     <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
                         Adventures ORG.
@@ -40,8 +43,11 @@ function Projects() {
                     <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400" >
                         Responsive website for Adventures ORG!
                     </p>
+                    <button className="bg-teal-700 dark:bg-black  mt-10 dark:border dark:text-sky-300 hover:bg-white hover:border-[2px] dark:hover:border-0 hover:w-54 hover:shadow-2xl hover:shadow-teal-600 hover:border-solid hover:border-teal-700 hover:text-teal-700 hover:dark:bg-sky-300 hover:dark:text-black  active:bg-cyan-400 text-white p-3 w-52 rounded-xl border dark:border-solid dark:border-sky-300 justify-center items-center text-3xl hover:cursor-pointer">
+                        check it out
+                    </button>
                 </li>
-                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
+                <li class="w-2/3 sm:w-5/6 hover:cursor-pointer flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
                     <img src={image3} alt="Infinity" class="w-1/2 h-1/6 mb-6 animated-box"/>
                     <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
                         Log-in page.
@@ -54,6 +60,9 @@ function Projects() {
                     <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400" >
                         A neat logging in page.
                     </p>
+                    <button className="bg-teal-700 dark:bg-black  mt-10 dark:border dark:text-sky-300 hover:bg-white hover:border-[2px] dark:hover:border-0 hover:w-54 hover:shadow-2xl hover:shadow-teal-600 hover:border-solid hover:border-teal-700 hover:text-teal-700 hover:dark:bg-sky-300 hover:dark:text-black  active:bg-cyan-400 text-white p-3 w-52 rounded-xl border dark:border-solid dark:border-sky-300 justify-center items-center text-3xl hover:cursor-pointer">
+                        check it out
+                    </button>
                 </li>
             </ul>
         </>
