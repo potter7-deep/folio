@@ -7,64 +7,69 @@ import Testimonials from './Testimonials.jsx';
 import Contact from './Contact.jsx';
 import Ending from './End.jsx';
 import Skills from './Skills.jsx';
+import ScrollReveal from './components/ScrollReveal.jsx';
 
 function App() {
-
-    document.title = "DAN MAINA | PORTFOLIO."; 
+  document.title = "Dan Maina | Full Stack Developer";
 
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="min-h-screen dark:bg-black mt-0">
+    <div className="min-h-screen bg-white dark:bg-slate-950">
       {loading && <StairsLoader onFinish={() => setLoading(false)} />}
 
-      {/* Main content fades in after loader */}
-      <div className={`transition-opacity duration-3000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
-        {/* Header Section */}
-        <header className="flex items-center justify-between p-4 bg-white dark:bg-black"/>
-          <Header/>
-        {/* Hero Section */}
-        <section className="min-h-screen items-center justify-center dark:bg-black">
-            <About/>
-        </section>
+      <div className={`transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+        {/* Header */}
+        <header className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 shadow-sm">
+          <Header />
+        </header>
 
-        <hr className="mx-auto bg-teal-700 dark:bg-sky-300 w-1/2 h-[1px]"></hr>
+        {/* Main Content */}
+        <main className="pt-16">
+          {/* Hero Section */}
+          <section className="min-h-[calc(100vh-4rem)]">
+            <About />
+          </section>
 
-        {/* skills Section */}
-        <section className="min-h-screen items-center justify-center dark:bg-black pl-4 pr-4">
-            <Skills/>
-        </section>
+          {/* Skills Section */}
+          <ScrollReveal animation="fade-up" threshold={0.1}>
+            <section>
+              <Skills />
+            </section>
+          </ScrollReveal>
 
-        <hr className="mx-auto bg-teal-700 dark:bg-sky-300 w-1/2 h-[1px]"></hr>
+          {/* Projects Section */}
+          <ScrollReveal animation="fade-up" threshold={0.1}>
+            <section id="projects">
+              <Projects />
+            </section>
+          </ScrollReveal>
 
-        {/* Projects Section */}
-        <section className="min-h-screen items-center justify-center dark:bg-black pl-4 pr-4">
-            <Projects/>
-        </section>
+          {/* Testimonials Section */}
+          <ScrollReveal animation="fade-up" threshold={0.1}>
+            <section>
+              <Testimonials />
+            </section>
+          </ScrollReveal>
 
-        <hr className="mx-auto bg-teal-700 dark:bg-sky-300 w-1/2 h-[1px]"></hr>
+          {/* Contact Section */}
+          <ScrollReveal animation="fade-up" threshold={0.1}>
+            <section id="contact">
+              <Contact />
+            </section>
+          </ScrollReveal>
+        </main>
 
-        {/* Services Section */}
-        <section className="min-h-screen items-center justify-center dark:bg-black">
-            <Testimonials/>
-        </section>
-
-        <hr className="mx-auto bg-teal-700 dark:bg-sky-300 w-1/2 h-[1px]"></hr>
-
-        {/* Contact Section */}
-        <section className="min-h-screen items-center justify-center dark:bg-black">
-            <Contact/>
-        </section>
-
-        <hr className="mx-auto bg-teal-700 dark:bg-sky-300 w-1/2 h-[1px]"></hr>
-
-        {/* Footer Section */}
-        <section className="items-center justify-center dark:bg-black">
-            <Ending/>
-        </section>
+        {/* Footer */}
+        <ScrollReveal animation="fade-up" threshold={0.1}>
+          <footer>
+            <Ending />
+          </footer>
+        </ScrollReveal>
       </div>
     </div>
   );
 }
 
 export default App;
+

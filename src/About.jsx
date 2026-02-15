@@ -1,86 +1,138 @@
 import myImage from './IMG/image.png'
-import Change from './Change.jsx'
-import Buttons from './Buttons.jsx';
-import {Typewriter} from 'react-simple-typewriter';
-import { FaInstagram } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
+import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import ScrollReveal from './components/ScrollReveal.jsx';
 
+function About() {
+  return (
+    <section id="about" className="min-h-[90vh] flex items-center justify-center py-20 px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          
+          {/* Left Content */}
+          <div className="order-2 md:order-1 text-center md:text-left">
+            <ScrollReveal animation="fade-up" delay={0} duration={800}>
+              <p className="text-teal-500 font-medium mb-4 tracking-wide uppercase text-sm">Hello, I'm</p>
+            </ScrollReveal>
+            
+            <ScrollReveal animation="fade-up" delay={100} duration={800}>
+              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-2">
+                Dan Maina
+              </h1>
+            </ScrollReveal>
+            
+            <ScrollReveal animation="fade-up" delay={200} duration={800}>
+              <h2 className="text-2xl md:text-3xl font-semibold text-slate-600 dark:text-slate-300 mb-6">
+                I'm a{' '}
+                <span className="text-teal-500">
+                  <Typewriter
+                    words={[
+                      "Full Stack Developer",
+                      "Mobile App Developer",
+                      "Web Developer",
+                      "UI/UX Enthusiast"
+                    ]}
+                    loop={true}
+                    cursor
+                    cursorStyle="_"
+                    typeSpeed={60}
+                    deleteSpeed={50}
+                    delaySpeed={2000}
+                  />
+                </span>
+              </h2>
+            </ScrollReveal>
+            
+            <ScrollReveal animation="fade-up" delay={300} duration={800}>
+              <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+                A passionate computer science student at Dedan Kimathi University of Technology, 
+                specializing in building exceptional digital experiences with modern technologies.
+              </p>
+            </ScrollReveal>
 
-function About(){
+            {/* Social Links */}
+            <ScrollReveal animation="fade-up" delay={400} duration={800}>
+              <div className="flex justify-center md:justify-start gap-4 mb-8">
+                <a 
+                  href="https://github.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-teal-500 hover:text-white transition-all duration-300 hover:-translate-y-1"
+                >
+                  <FaGithub size={22} />
+                </a>
+                <a 
+                  href="https://linkedin.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-teal-500 hover:text-white transition-all duration-300 hover:-translate-y-1"
+                >
+                  <FaLinkedin size={22} />
+                </a>
+                <a 
+                  href="https://twitter.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-teal-500 hover:text-white transition-all duration-300 hover:-translate-y-1"
+                >
+                  <FaTwitter size={22} />
+                </a>
+                <a 
+                  href="mailto:dm549153@gmail.com"
+                  className="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-teal-500 hover:text-white transition-all duration-300 hover:-translate-y-1"
+                >
+                  <FaEnvelope size={22} />
+                </a>
+              </div>
+            </ScrollReveal>
 
-    // let Image = '.IMG/image.png';
+            {/* CTA Buttons */}
+            <ScrollReveal animation="fade-up" delay={500} duration={800}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a 
+                  href="#contact"
+                  className="px-8 py-3 bg-teal-500 text-white font-semibold rounded-xl hover:bg-teal-600 transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/30 text-center"
+                >
+                  Get In Touch
+                </a>
+                <a 
+                  href="#projects"
+                  className="px-8 py-3 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-semibold rounded-xl hover:border-teal-500 hover:text-teal-500 transition-all duration-300 text-center"
+                >
+                  View Work
+                </a>
+              </div>
+            </ScrollReveal>
+          </div>
 
-    return(
-        <>
-        <section id="about" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 -12  mt-15 sm:mt-0 scroll-mt-40 widescreen:section-min-height md:section-min-height">
-            <article class="sm:w-1/2">
-                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
-                    Hello, It's me, 
-                </h2>
-                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-teal-600 dark:text-sky-300">
-                    Dan Maina.
-                </h2>
-                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
-                    I am a <span className="text-teal-600 dark:text-sky-300">
-                                <Typewriter
-                                    words = {
-                                        [
-                                            "Fullstack developer.", 
-                                            "Mobile App developer.", 
-                                            "Web App developer.", 
-                                            "UI/UX Developer."
-                                        ]
-                                    }
-                                    loop={true}
-                                    cursor
-                                    cursorStyle='|'
-                                    typeSpeed={70}
-                                    deleteSpeed={180}
-                                    delaySpeed={2000}
-                                    
-                                />                                                         
-                            </span>
-                </h2>
+          {/* Right Content - Profile Image */}
+          <div className="order-1 md:order-2 flex justify-center">
+            <ScrollReveal animation="fade-right" delay={200} duration={1000}>
+              <div className="relative">
+                {/* Decorative ring */}
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl transform rotate-6"></div>
+                <div className="absolute inset-0 bg-gradient-to-bl from-purple-500 to-pink-500 rounded-2xl transform -rotate-6 opacity-50"></div>
                 
-                <p class="max-w-md text-xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-                    I am a fullstack developer with a 
-                    passion for creating dynamic and 
-                    responsive web applications. I have 
-                    experience in both front-end and 
-                    back-end development, and I am 
-                    always eager to learn new 
-                    technologies and improve my skills.
-                    <br />
-                    <br />
-                
-                    <p className='flex flex-row justify-center items-center mt-7 gap-4 text-3xl'>
-                        <p className='hover:text-teal-700 dark:text-sky-300 dark:bg-black dark:border-[1px] hover:cursor-pointer hover:dark:border-0 hover:shadow-xl hover:shadow-teal-700 bg-teal-700 hover:dark:bg-sky-300 rounded-full hover:bg-white hover:border-[2px] hover:border-solid text-white hover:dark:text-black p-2 hover:rounded-full'>< FaInstagram /></p>
-                        <p className='hover:text-teal-700 dark:text-sky-300 dark:bg-black dark:border-[1px] hover:cursor-pointer hover:dark:border-0 hover:shadow-xl hover:shadow-teal-700 bg-teal-700 hover:dark:bg-sky-300 rounded-full hover:bg-white hover:border-[2px] hover:border-solid text-white hover:dark:text-black p-2 hover:rounded-full'>< FaWhatsapp /></p>
-                        <p className='hover:text-teal-700 dark:text-sky-300 dark:bg-black dark:border-[1px] hover:cursor-pointer hover:dark:border-0 hover:shadow-xl hover:shadow-teal-700 bg-teal-700 hover:dark:bg-sky-300 rounded-full hover:bg-white hover:border-[2px] hover:border-solid text-white hover:dark:text-black p-2 hover:rounded-full'>< CiLinkedin /></p>
-                        <p className='hover:text-teal-700 dark:text-sky-300 dark:bg-black dark:border-[1px] hover:cursor-pointer hover:dark:border-0 hover:shadow-xl hover:shadow-teal-700 bg-teal-700 hover:dark:bg-sky-300 rounded-full hover:bg-white hover:border-[2px] hover:border-solid text-white hover:dark:text-black p-2 hover:rounded-full'>< FaGithub /></p>
-                    </p>
-
-                    <button className="bg-teal-700 dark:bg-black ml-18 mt-10 dark:border dark:text-sky-300 hover:bg-white hover:border-[2px] dark:hover:border-0 hover:w-54 hover:shadow-2xl hover:shadow-teal-600 hover:border-solid hover:border-teal-700 hover:text-teal-700 hover:dark:bg-sky-300 hover:dark:text-black  active:bg-cyan-400 text-white p-3 w-52 rounded-xl border dark:border-solid dark:border-sky-300 justify-center items-center text-3xl hover:cursor-pointer">
-                        Download CV
-                    </button>
-
-                </p>
-                <p className="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-                </p>
-                
-            </article>
-            <div className="home-img">
-                <div className="relative flex justify-center items-center overflow-hidden w-[35vw] h-[35vw] bg-white dark:bg-black rounded-full p-[7px] mix-blend-lighten">
-                    <div className="img-item relative flex justify-center overflow-hidden w-full h-full bg-white dark:bg-black bg-cover z-1">
-                        <img src={myImage} alt="Dan Maina's Image" className="bg-white dark:bg-black rounded-full hover:cursor-pointer"/>
-                    </div>
+                {/* Image container */}
+                <div className="relative bg-white dark:bg-slate-900 rounded-2xl p-2">
+                  <img 
+                    src={myImage} 
+                    alt="Dan Maina" 
+                    className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl"
+                  />
                 </div>
-            </div>
-        </section>
-        </>
-    );
+              </div>
+            </ScrollReveal>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default About;
+

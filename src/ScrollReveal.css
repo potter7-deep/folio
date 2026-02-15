@@ -1,0 +1,112 @@
+/* Ferrari-Style Scroll Reveal Animations */
+
+/* Base reveal state - hidden */
+.scroll-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+/* When revealed, add animation class */
+.scroll-reveal.revealed {
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* === FADE UP - Main Ferrari-style animation === */
+.scroll-reveal.fade-up.revealed {
+  animation-name: fadeUp;
+}
+
+/* === FADE IN === */
+.scroll-reveal.fade-in.revealed {
+  animation-name: fadeIn;
+}
+
+/* === FADE LEFT === */
+.scroll-reveal.fade-left.revealed {
+  animation-name: fadeLeft;
+}
+
+/* === FADE RIGHT === */
+.scroll-reveal.fade-right.revealed {
+  animation-name: fadeRight;
+}
+
+/* === ZOOM IN === */
+.scroll-reveal.zoom-in.revealed {
+  animation-name: zoomIn;
+}
+
+/* === Keyframe Animations === */
+
+/* Fade Up - Smooth upward slide with fade */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In - Simple opacity fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade Left - Slide in from right */
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade Right - Slide in from left */
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Zoom In - Scale up with fade */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === Stagger animation delays for child elements === */
+/* When parent has .stagger-children, children animate with delay */
+.scroll-reveal.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.scroll-reveal.stagger-children > *:nth-child(2) { animation-delay: 100ms; }
+.scroll-reveal.stagger-children > *:nth-child(3) { animation-delay: 200ms; }
+.scroll-reveal.stagger-children > *:nth-child(4) { animation-delay: 300ms; }
+.scroll-reveal.stagger-children > *:nth-child(5) { animation-delay: 400ms; }
+.scroll-reveal.stagger-children > *:nth-child(6) { animation-delay: 500ms; }
+.scroll-reveal.stagger-children > *:nth-child(7) { animation-delay: 600ms; }
+.scroll-reveal.stagger-children > *:nth-child(8) { animation-delay: 700ms; }
+.scroll-reveal.stagger-children > *:nth-child(9) { animation-delay: 800ms; }
+.scroll-reveal.stagger-children > *:nth-child(10) { animation-delay: 900ms; }
+

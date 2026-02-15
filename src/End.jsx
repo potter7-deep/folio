@@ -1,39 +1,108 @@
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
+function Ending() {
+  const currentYear = new Date().getFullYear();
 
+  const quickLinks = [
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" }
+  ];
 
-function Ending(){
-    return(
-        <>
-            <footer id="footer" class="backdrop-blur-md text-white text-xl">
-                <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between text-slate-400">
-                    <address>
-                        <h2 class="text-4xt font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
-                            Dan Maina.
-                        </h2>
-                        
-                        <div class="text-left sm:text-center">
-                            <p class="text-left sm:text-center">Dedan Kimathi University of <br/>Technology, Nyeri </p>
-                            <p>P.O BOX 657-10100<br/></p>
-                            Email: <a href="mailto:dm549153@gmail.com">Inquires@DanMaina.com</a><br/>
-                            Phone: <a href="tel:+254714740470">0714 740 470 </a> 
-                            or <a href="tel:+254714740470">0732 048 631</a>
-                        </div>
-                        
-                    </address>
-                    <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
-                        <a href="#about" class="hover:opacity-90">About</a>
-                        <a href="#services" class="hover:opacity-90">Projects</a>
-                        <a href="#testimonials" class="hover:opacity-90">People's say</a>
-                        <a href="#skill" class="hover:opacity-90">my skills</a>
-                        <a href="#contact" class="hover:opacity-90">Contact me</a>
-                    </nav>
-                    <div class="flex flex-col items-center sm:gap-2">
-                        <p class="text-right">Copyright &copy; <span id="year">2025</span></p>
-                        <p class="text-right">All Rights Reserved</p>
-                    </div>
-                </section>
-            </footer>
-        </>
-    );
+  const socialLinks = [
+    { icon: FaGithub, href: "https://github.com", label: "GitHub" },
+    { icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: FaInstagram, href: "https://instagram.com", label: "Instagram" }
+  ];
+
+  return (
+    <footer className="bg-slate-900 text-white pt-16 pb-8">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
+          {/* Brand */}
+          <div className="md:col-span-2">
+            <h3 className="text-2xl font-bold mb-4">
+              Dan <span className="text-teal-500">Maina</span>
+            </h3>
+            <p className="text-slate-400 mb-6 max-w-md leading-relaxed">
+              A passionate full-stack developer dedicated to building exceptional digital experiences. Let's create something amazing together.
+            </p>
+            {/* Social Links */}
+            <div className="flex gap-4">
+              {socialLinks.map((social, index) => (
+                <a 
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-teal-500 hover:text-white transition-all duration-300"
+                >
+                  <social.icon size={18} />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-3">
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <a 
+                    href={link.href}
+                    className="text-slate-400 hover:text-teal-500 transition-colors duration-200"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <ul className="space-y-3 text-slate-400">
+              <li>
+                <a 
+                  href="mailto:dm549153@gmail.com"
+                  className="hover:text-teal-500 transition-colors duration-200"
+                >
+                  dm549153@gmail.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="tel:+254714740470"
+                  className="hover:text-teal-500 transition-colors duration-200"
+                >
+                  +254 714 740 470
+                </a>
+              </li>
+              <li>Nyeri, Kenya</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-slate-800">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-slate-400 text-sm">
+              © {currentYear} Dan Maina. All rights reserved.
+            </p>
+            {/* <p className="text-slate-500 text-sm">
+              Built with <span className="text-red-500">❤</span> using React
+            </p> */}
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
+
 export default Ending;
+

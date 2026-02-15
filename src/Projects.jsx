@@ -1,72 +1,152 @@
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import image1 from './IMG/DATA.png';
 import image2 from './IMG/web2.jpg';
 import image3 from './IMG/web3.jpg';
 
-
 function Projects() {
+  const projects = [
+    {
+      title: "Logo Tech LTD",
+      description: "A professional company website built with HTML, CSS, and JavaScript. Features responsive design, modern aesthetics, and smooth animations.",
+      image: image1,
+      tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+      liveLink: "#",
+      githubLink: "#",
+      color: "from-teal-500 to-cyan-500"
+    },
+    {
+      title: "Adventures ORG",
+      description: "A travel agency website showcasing destinations and travel packages. Includes booking forms and interactive galleries.",
+      image: image2,
+      tags: ["React", "Tailwind", "UI/UX"],
+      liveLink: "#",
+      githubLink: "#",
+      color: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "Authentication System",
+      description: "A secure login and registration system with form validation, password hashing, and session management.",
+      image: image3,
+      tags: ["Node.js", "Express", "MongoDB", "JWT"],
+      liveLink: "#",
+      githubLink: "#",
+      color: "from-blue-500 to-indigo-500"
+    },
+    {
+      title: "E-Commerce Platform",
+      description: "A full-featured online store with product catalog, shopping cart, checkout functionality, and admin dashboard.",
+      image: image1,
+      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      liveLink: "#",
+      githubLink: "#",
+      color: "from-orange-500 to-red-500"
+    },
+    {
+      title: "Task Management App",
+      description: "A productivity application for managing tasks and projects with drag-and-drop functionality and team collaboration.",
+      image: image2,
+      tags: ["React Native", "Firebase", "Redux"],
+      liveLink: "#",
+      githubLink: "#",
+      color: "from-green-500 to-emerald-500"
+    },
+    {
+      title: "Portfolio Website",
+      description: "A personal portfolio showcasing projects, skills, and contact information with a modern, professional design.",
+      image: image3,
+      tags: ["React", "Tailwind", "Animations"],
+      liveLink: "#",
+      githubLink: "#",
+      color: "from-pink-500 to-rose-500"
+    }
+  ];
 
-    return(
-        <>
-            <section id="services" className="p-6 my-12 scroll-mt-20">
-                <h2 className="text-4xt font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
-                    My Projects
-                </h2>
-            </section>
+  return (
+    <section id="projects" className="py-20 px-6">
+      <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
+            Featured <span className="text-teal-500">Projects</span>
+          </h2>
+          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            A collection of projects that showcase my skills and passion for building quality applications
+          </p>
+          <div className="w-20 h-1 bg-teal-500 mx-auto mt-4 rounded-full"></div>
+        </div>
 
-            <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-                <li className="w-2/3 sm:w-5/6 hover:cursor-pointer flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
-                    <img src={image1} alt="Explore" className="w-1/2 h-1/6 mb-6 animated-box"/>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
-                        Logo tech LTD.
-                    </h3>
-                    <p class="hidden md:block text-xl text-center mt-2 text-slate-500 dark:text-slate-400">
-                        This is a simple website for a company.
-                        It is a responsive website that works on all devices.
-                        It is built using HTML, CSS and JavaScript.
-                    </p >
-                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400" >
-                        Affordable logo tech LTD website.
-                    </p>
-                    <button className="bg-teal-700 dark:bg-black  mt-10 dark:border dark:text-sky-300 hover:bg-white hover:border-[2px] dark:hover:border-0 hover:w-54 hover:shadow-2xl hover:shadow-teal-600 hover:border-solid hover:border-teal-700 hover:text-teal-700 hover:dark:bg-sky-300 hover:dark:text-black  active:bg-cyan-400 text-white p-3 w-52 rounded-xl border dark:border-solid dark:border-sky-300 justify-center items-center text-3xl hover:cursor-pointer">
-                        check it out
-                    </button>
-                </li>
-                <li class="w-2/3 sm:w-5/6 hover:cursor-pointer flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
-                    <img src={image2} alt="Adventure" class="w-1/2 h-1/6 mb-6 animated-box"/>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
-                        Adventures ORG.
-                    </h3>
-                    <p class="hidden sm:block text-xl text-center mt-2 text-slate-500 dark:text-slate-400">
-                        I build this responsive website for a travel agency company. 
-                        It is a simple website that is easy to use.
-                    </p >
-                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400" >
-                        Responsive website for Adventures ORG!
-                    </p>
-                    <button className="bg-teal-700 dark:bg-black  mt-10 dark:border dark:text-sky-300 hover:bg-white hover:border-[2px] dark:hover:border-0 hover:w-54 hover:shadow-2xl hover:shadow-teal-600 hover:border-solid hover:border-teal-700 hover:text-teal-700 hover:dark:bg-sky-300 hover:dark:text-black  active:bg-cyan-400 text-white p-3 w-52 rounded-xl border dark:border-solid dark:border-sky-300 justify-center items-center text-3xl hover:cursor-pointer">
-                        check it out
-                    </button>
-                </li>
-                <li class="w-2/3 sm:w-5/6 hover:cursor-pointer flex flex-col items-center border border-solid border-slate-900 dark:border-sky-300 bg-white dark:bg-black py-6 px2 rounded-3xl shadow-xl">
-                    <img src={image3} alt="Infinity" class="w-1/2 h-1/6 mb-6 animated-box"/>
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-sky-300">
-                        Log-in page.
-                    </h3>
-                    <p class="hidden sm:block text-xl text-center mt-2 text-slate-500 dark:text-slate-400">
-                        This is a simple log-in page that is responsive.
-                        It is built using HTML, CSS and JavaScript.
-                        It is a simple log-in page that works on all devices.
-                    </p >
-                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400" >
-                        A neat logging in page.
-                    </p>
-                    <button className="bg-teal-700 dark:bg-black  mt-10 dark:border dark:text-sky-300 hover:bg-white hover:border-[2px] dark:hover:border-0 hover:w-54 hover:shadow-2xl hover:shadow-teal-600 hover:border-solid hover:border-teal-700 hover:text-teal-700 hover:dark:bg-sky-300 hover:dark:text-black  active:bg-cyan-400 text-white p-3 w-52 rounded-xl border dark:border-solid dark:border-sky-300 justify-center items-center text-3xl hover:cursor-pointer">
-                        check it out
-                    </button>
-                </li>
-            </ul>
-        </>
-    );
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div 
+              key={index}
+              className="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 group"
+            >
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                  <a 
+                    href={project.liveLink}
+                    className="p-3 bg-white rounded-full text-slate-900 hover:bg-teal-500 hover:text-white transition-all duration-300 transform translate-y-4 group-hover:translate-y-0"
+                  >
+                    <FaExternalLinkAlt size={18} />
+                  </a>
+                  <a 
+                    href={project.githubLink}
+                    className="p-3 bg-white rounded-full text-slate-900 hover:bg-teal-500 hover:text-white transition-all duration-300 transform translate-y-4 group-hover:translate-y-0"
+                  >
+                    <FaGithub size={18} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2 group-hover:text-teal-500 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">
+                  {project.description}
+                </p>
+                
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex}
+                      className="px-3 py-1 text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* More Projects Button */}
+        <div className="text-center mt-12">
+          <a 
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 border-2 border-teal-500 text-teal-500 font-semibold rounded-xl hover:bg-teal-500 hover:text-white transition-all duration-300"
+          >
+            <FaGithub />
+            View More on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Projects;
+
