@@ -5,6 +5,15 @@ import image3 from './IMG/web3.jpg';
 
 function Projects() {
   const projects = [
+{
+      title: "Voting App",
+      description: "A live voting application where users can vote in real-time. Features a modern interface and instant result updates.",
+      image: image1,
+      tags: ["React", "Real-time", "Web App"],
+      liveLink: "https://voting-app-kimathi.onrender.com/",
+      githubLink: "#",
+      color: "from-teal-500 to-cyan-500"
+    },
     {
       title: "Logo Tech LTD",
       description: "A professional company website built with HTML, CSS, and JavaScript. Features responsive design, modern aesthetics, and smooth animations.",
