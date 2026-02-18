@@ -5,7 +5,7 @@ import image3 from './IMG/web3.jpg';
 
 function Projects() {
   const projects = [
-{
+    {
       title: "Voting App",
       description: "A live voting application where users can vote in real-time. Features a modern interface and instant result updates.",
       image: image1,
@@ -15,38 +15,11 @@ function Projects() {
       color: "from-teal-500 to-cyan-500"
     },
     {
-      title: "Logo Tech LTD",
-      description: "A professional company website built with HTML, CSS, and JavaScript. Features responsive design, modern aesthetics, and smooth animations.",
-      image: image1,
-      tags: ["HTML", "CSS", "JavaScript", "Responsive"],
-      liveLink: "#",
-      githubLink: "#",
-      color: "from-teal-500 to-cyan-500"
-    },
-    {
-      title: "Adventures ORG",
-      description: "A travel agency website showcasing destinations and travel packages. Includes booking forms and interactive galleries.",
+      title: "Modern Hardware",
+      description: "A full-featured e-commerce platform for hardware products with product catalog, shopping cart, checkout functionality, and modern UI.",
       image: image2,
-      tags: ["React", "Tailwind", "UI/UX"],
-      liveLink: "#",
-      githubLink: "#",
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      title: "Authentication System",
-      description: "A secure login and registration system with form validation, password hashing, and session management.",
-      image: image3,
-      tags: ["Node.js", "Express", "MongoDB", "JWT"],
-      liveLink: "#",
-      githubLink: "#",
-      color: "from-blue-500 to-indigo-500"
-    },
-    {
-      title: "E-Commerce Platform",
-      description: "A full-featured online store with product catalog, shopping cart, checkout functionality, and admin dashboard.",
-      image: image1,
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveLink: "#",
+      tags: ["React", "Node.js", "MongoDB", "E-Commerce"],
+      liveLink: "https://modern-hardware-app.onrender.com/products",
       githubLink: "#",
       color: "from-orange-500 to-red-500"
     },
