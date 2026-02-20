@@ -120,7 +120,7 @@ function About() {
                 <div className="relative bg-white dark:bg-slate-900 rounded-2xl p-2">
                   <img 
                     src={myImage} 
-                    alt="Dan Maina" 
+                    alt="Dan Maina - Full Stack Developer and Computer Science Student at Dedan Kimathi University of Technology" 
                     className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl"
                   />
                 </div>

@@ -9,19 +9,28 @@ const StairsLoader = ({ onFinish }) => {
   }, [onFinish]);
 
   return (
-    <div className="fixed inset-0 bg-slate-900 flex items-center justify-center z-50 overflow-hidden">
-      {/* Animated rings */}
-      <div className="relative w-32 h-32">
-        <div className="absolute inset-0 border-4 border-teal-500/20 rounded-full"></div>
-        <div className="absolute inset-0 border-4 border-transparent border-t-teal-500 rounded-full animate-spin" style={{ animationDuration: '1.5s' }}></div>
-        <div className="absolute inset-2 border-4 border-transparent border-t-cyan-400 rounded-full animate-spin" style={{ animationDuration: '1s', animationDirection: 'reverse' }}></div>
+    <div className="fixed inset-0 bg-slate-900 flex flex-col items-center justify-center z-50 overflow-hidden">
+      {/* Animated logo/icon */}
+      <div className="relative mb-8">
+        <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center">
+          <span className="text-3xl font-bold text-white">DM</span>
+        </div>
+        {/* Pulse rings */}
+        <div className="absolute inset-0 w-20 h-20 rounded-2xl border-2 border-teal-500/50 animate-ping"></div>
       </div>
       
-      {/* Loading text */}
-      <div className="absolute bottom-20 text-slate-400 text-sm font-medium tracking-widest uppercase">
-        <span className="inline-block animate-pulse">Loading</span>
-        <span className="inline-block animate-pulse delay-75">.</span>
-        <span className="inline-block animate-pulse delay-150">.</span>
+      {/* Skeleton loader bars */}
+      <div className="flex items-end gap-1 h-12 mb-4">
+        <div className="w-3 bg-teal-500/60 rounded-full animate-bounce" style={{ height: '40%', animationDelay: '0s' }}></div>
+        <div className="w-3 bg-cyan-500/60 rounded-full animate-bounce" style={{ height: '70%', animationDelay: '0.1s' }}></div>
+        <div className="w-3 bg-teal-500/60 rounded-full animate-bounce" style={{ height: '100%', animationDelay: '0.2s' }}></div>
+        <div className="w-3 bg-cyan-500/60 rounded-full animate-bounce" style={{ height: '60%', animationDelay: '0.3s' }}></div>
+        <div className="w-3 bg-teal-500/60 rounded-full animate-bounce" style={{ height: '80%', animationDelay: '0.4s' }}></div>
+      </div>
+      
+      {/* Loading text with fade */}
+      <div className="text-slate-400 text-sm font-medium tracking-widest uppercase">
+        <span className="inline-block animate-pulse">Building Experience</span>
       </div>
     </div>
   );

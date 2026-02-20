@@ -11,7 +11,7 @@ function Projects() {
       image: image1,
       tags: ["React", "Real-time", "Web App"],
       liveLink: "https://voting-app-kimathi.onrender.com/",
-      githubLink: "#",
+      githubLink: "https://github.com/danmaina/voting-app",
       color: "from-teal-500 to-cyan-500"
     },
     {
@@ -20,16 +20,16 @@ function Projects() {
       image: image2,
       tags: ["React", "Node.js", "MongoDB", "E-Commerce"],
       liveLink: "https://modern-hardware-app.onrender.com/products",
-      githubLink: "#",
+      githubLink: "https://github.com/danmaina/modern-hardware",
       color: "from-orange-500 to-red-500"
     },
     {
-      title: "Task Management App",
-      description: "A productivity application for managing tasks and projects with drag-and-drop functionality and team collaboration.",
+      title: "Money Management App",
+      description: "A financial application for managing personal finances, tracking expenses, and budgeting with intuitive dashboard and analytics.",
       image: image2,
-      tags: ["React Native", "Firebase", "Redux"],
-      liveLink: "#",
-      githubLink: "#",
+      tags: ["React", "Node.js", "Firebase", "Tailwind"],
+      liveLink: "https://money-management-app-40bd.onrender.com",
+      githubLink: "https://github.com/danmaina/task-management",
       color: "from-green-500 to-emerald-500"
     },
     {
@@ -37,8 +37,8 @@ function Projects() {
       description: "A personal portfolio showcasing projects, skills, and contact information with a modern, professional design.",
       image: image3,
       tags: ["React", "Tailwind", "Animations"],
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://github.com/danmaina/portfolio",
+      githubLink: "https://github.com/danmaina/portfolio",
       color: "from-pink-500 to-rose-500"
     }
   ];

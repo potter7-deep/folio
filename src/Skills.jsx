@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython, FaJava, FaSwift, FaGitAlt, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiDjango, SiMongodb, SiMysql, SiFirebase, SiKotlin, SiAngular, SiFigma, SiVite } from "react-icons/si";
+import { SiTailwindcss, SiDjango, SiMongodb, SiMysql, SiFirebase, SiKotlin, SiAngular, SiFigma, SiVite, SiRust } from "react-icons/si";
 
 function Skills() {
   const skillCategories = [
@@ -7,7 +7,7 @@ function Skills() {
       title: "Frontend",
       skills: [
         { name: "HTML5", icon: FaHtml5, color: "text-orange-500" },
-        { name: "CSS3", color: "text-blue-500" },
+        { name: "CSS3", icon: FaCss3, color: "text-blue-500" },
         { name: "JavaScript", icon: FaJs, color: "text-yellow-500" },
         { name: "React", icon: FaReact, color: "text-cyan-400" },
         { name: "Tailwind", icon: SiTailwindcss, color: "text-teal-400" },
@@ -21,12 +21,8 @@ function Skills() {
         { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
         { name: "Python", icon: FaPython, color: "text-yellow-500" },
         { name: "Django", icon: SiDjango, color: "text-green-600" },
-        { name: "Django", icon: SiDjango, color: "text-green-600" },
         { name: "Java", icon: FaJava, color: "text-red-500" },
-        { name: "Coq", color: "text-blue-600" },
-        { name: "Java", icon: FaJava, color: "text-red-500" },
-        { name: "Coq", color: "text-blue-600" },
-        { name: "Prolog", color: "text-indigo-500" },
+        { name: "Rust", icon: SiRust, color: "text-orange-500" },
       ]
     },
     {
