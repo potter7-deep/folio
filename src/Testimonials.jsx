@@ -73,9 +73,7 @@ function Testimonials() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-slate-200 dark:border-slate-700">
           <div className="text-center">
-            <CountUp end={10} suffix="+" />
-            <p className="text-slate-600 dark:text-slate-400 mt-1">Projects Completed</p>
-          </div>
+            <CountUp end={11} suffix="+" />\n            <p className="text-slate-600 dark:text-slate-400 mt-1">Projects Completed</p>\n          </div>
           <div className="text-center">
             <CountUp end={5} suffix="+" />
             <p className="text-slate-600 dark:text-slate-400 mt-1">Happy Clients</p>

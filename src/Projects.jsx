@@ -40,6 +40,15 @@ function Projects() {
       liveLink: "https://github.com/danmaina/portfolio",
       githubLink: "https://github.com/danmaina/portfolio",
       color: "from-pink-500 to-rose-500"
+    },
+    {
+      title: "Linda Mama",
+      description: "Comprehensive maternal healthcare platform connecting expectant mothers with medical services, tracking, and support resources.",
+      image: image2,
+      tags: ["React", "Healthcare", "Fullstack", "Maternal Health"],
+      liveLink: "https://linda-mama-yot0.onrender.com",
+      githubLink: "https://github.com/potter7-deep/LINDA-MAMA.git",
+      color: "from-purple-500 to-pink-500"
     }
   ];
 
