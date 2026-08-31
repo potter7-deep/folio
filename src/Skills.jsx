@@ -1,5 +1,5 @@
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython, FaJava, FaSwift, FaGitAlt, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiDjango, SiMongodb, SiMysql, SiFirebase, SiKotlin, SiAngular, SiFigma, SiVite, SiRust } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython, FaJava, FaSwift, FaGitAlt, FaGithub, FaShieldAlt, FaLock, FaNetworkWired, FaCloud, FaAws } from "react-icons/fa";
+import { SiTailwindcss, SiDjango, SiMongodb, SiMysql, SiFirebase, SiKotlin, SiAngular, SiFigma, SiVite, SiRust, SiGooglecloud, SiMicrosoftazure, SiKalilinux } from "react-icons/si";
 
 function Skills() {
   const skillCategories = [
@@ -39,6 +39,24 @@ function Skills() {
         { name: "React Native", icon: FaReact, color: "text-cyan-400" },
         { name: "Swift", icon: FaSwift, color: "text-orange-500" },
         { name: "Kotlin", icon: SiKotlin, color: "text-purple-500" },
+      ]
+    },
+    {
+      title: "Cybersecurity",
+      skills: [
+        { name: "Network Security", icon: FaNetworkWired, color: "text-blue-500" },
+        { name: "Threat Analysis", icon: FaShieldAlt, color: "text-red-500" },
+        { name: "Penetration Testing", icon: SiKalilinux, color: "text-cyan-500" },
+        { name: "Security Awareness", icon: FaLock, color: "text-teal-500" },
+      ]
+    },
+    {
+      title: "Cloud Computing",
+      skills: [
+        { name: "AWS", icon: FaAws, color: "text-orange-500" },
+        { name: "Google Cloud", icon: SiGooglecloud, color: "text-blue-500" },
+        { name: "Azure", icon: SiMicrosoftazure, color: "text-blue-600" },
+        { name: "Cloud Security", icon: FaCloud, color: "text-cyan-400" },
       ]
     },
     {
@@ -136,6 +154,126 @@ function Skills() {
               </div>
             </div>
           ))}
+        </div>
+
+{/* Certifications Section */}
+        <div className="mt-16">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
+              Certifications & <span className="text-teal-500">Training</span>
+            </h3>
+            <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Professional certifications earned through structured training programs
+            </p>
+            <div className="w-20 h-1 bg-teal-500 mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a 
+              href="/certs/AI_CERT.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-teal-500/10 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Artificial Intelligence Training</h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">ICT Authority Kenya · 2026</p>
+              <span className="inline-flex items-center text-sm font-medium text-teal-500">
+                View Certificate
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </a>
+
+            <a 
+              href="/certs/cybersecurity-emerging-trends.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Cybersecurity & Emerging Trends</h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">ICT Authority · Cyber Shujaa · 2026</p>
+              <span className="inline-flex items-center text-sm font-medium text-teal-500">
+                View Certificate
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </a>
+
+            <a 
+              href="/certs/cybersecurity-awareness.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Introduction to Cybersecurity Awareness</h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">HP LIFE · 2026</p>
+              <span className="inline-flex items-center text-sm font-medium text-teal-500">
+                View Certificate
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </a>
+
+            <a 
+              href="/certs/cybersecurity-fundamentals.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Critical Thinking in the AI Era</h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">HP LIFE · 2026</p>
+              <span className="inline-flex items-center text-sm font-medium text-teal-500">
+                View Certificate
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </a>
+
+            <a 
+              href="/certs/dan-maina.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l9-5M12 14l-9-5m9 5v6" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">BuildWise Innovation Challenge</h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">DeKUT DeSIC · 2026</p>
+              <span className="inline-flex items-center text-sm font-medium text-teal-500">
+                View Certificate
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </a>
+          </div>
         </div>
 
         {/* Experience Section */}
