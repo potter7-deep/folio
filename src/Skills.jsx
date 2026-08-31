@@ -1,5 +1,5 @@
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython, FaJava, FaSwift, FaGitAlt, FaGithub, FaShieldAlt, FaLock, FaNetworkWired, FaCloud, FaAws } from "react-icons/fa";
-import { SiTailwindcss, SiDjango, SiMongodb, SiMysql, SiFirebase, SiKotlin, SiAngular, SiFigma, SiVite, SiRust, SiGooglecloud, SiMicrosoftazure, SiKalilinux } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython, FaJava, FaSwift, FaGitAlt, FaGithub, FaShieldAlt, FaLock, FaNetworkWired, FaCloud, FaAws, FaMicrosoft, FaCode } from "react-icons/fa";
+import { SiTailwindcss, SiDjango, SiMongodb, SiMysql, SiFirebase, SiKotlin, SiAngular, SiFigma, SiVite, SiRust, SiGooglecloud, SiKalilinux, SiC, SiPython, SiSqlite } from "react-icons/si";
 
 function Skills() {
   const skillCategories = [
@@ -19,7 +19,9 @@ function Skills() {
       title: "Backend",
       skills: [
         { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
-        { name: "Python", icon: FaPython, color: "text-yellow-500" },
+        { name: "Python", icon: SiPython, color: "text-blue-500" },
+        { name: "C", icon: SiC, color: "text-blue-600" },
+        { name: "Assembly Language", icon: FaCode, color: "text-slate-500" },
         { name: "Django", icon: SiDjango, color: "text-green-600" },
         { name: "Java", icon: FaJava, color: "text-red-500" },
         { name: "Rust", icon: SiRust, color: "text-orange-500" },
@@ -30,6 +32,7 @@ function Skills() {
       skills: [
         { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
         { name: "MySQL", icon: SiMysql, color: "text-blue-600" },
+        { name: "SQLite", icon: SiSqlite, color: "text-sky-500" },
         { name: "Firebase", icon: SiFirebase, color: "text-yellow-500" },
       ]
     },
@@ -55,7 +58,7 @@ function Skills() {
       skills: [
         { name: "AWS", icon: FaAws, color: "text-orange-500" },
         { name: "Google Cloud", icon: SiGooglecloud, color: "text-blue-500" },
-        { name: "Azure", icon: SiMicrosoftazure, color: "text-blue-600" },
+        { name: "Azure", icon: FaMicrosoft, color: "text-blue-600" },
         { name: "Cloud Security", icon: FaCloud, color: "text-cyan-400" },
       ]
     },
@@ -170,7 +173,7 @@ function Skills() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <a 
-              href="/certs/AI_CERT.pdf" 
+              href="/certs/AI_CERT.jpeg" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
@@ -191,7 +194,7 @@ function Skills() {
             </a>
 
             <a 
-              href="/certs/cybersecurity-emerging-trends.pdf" 
+              href="/certs/cybersecurity-emerging-trends.jpeg" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
@@ -212,7 +215,7 @@ function Skills() {
             </a>
 
             <a 
-              href="/certs/cybersecurity-awareness.pdf" 
+              href="/certs/cybersecurity-awareness.jpeg" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
@@ -233,7 +236,7 @@ function Skills() {
             </a>
 
             <a 
-              href="/certs/cybersecurity-fundamentals.pdf" 
+              href="/certs/cybersecurity-fundamentals.jpeg" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
@@ -254,7 +257,7 @@ function Skills() {
             </a>
 
             <a 
-              href="/certs/dan-maina.pdf" 
+              href="/certs/dan-maina.jpeg" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
