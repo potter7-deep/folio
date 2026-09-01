@@ -15,8 +15,14 @@ const StairsLoader = ({ onFinish }) => {
   return (
     <div className="loader-screen" aria-label="Loading screen">
       <div className="loader-glow" />
+      <div className="loader-grid" aria-hidden="true" />
 
       <div className="loader-core">
+        <div className="loader-orbit" aria-hidden="true">
+          <span className="loader-orbit-ring ring-one" />
+          <span className="loader-orbit-ring ring-two" />
+        </div>
+
         <div className="loader-logo" aria-label="Dan Maina">
           {letters.map((letter, index) => (
             <span
@@ -33,7 +39,10 @@ const StairsLoader = ({ onFinish }) => {
           <div className="loader-bar-fill" />
         </div>
 
-        <p className="loader-caption">Loading experience</p>
+        <div className="loader-meta" aria-live="polite">
+          <span className="loader-status-dot" aria-hidden="true" />
+          <p className="loader-caption">Securing the cloud</p>
+        </div>
       </div>
     </div>
   );

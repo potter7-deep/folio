@@ -184,28 +184,7 @@ function Skills() {
                 </svg>
               </div>
               <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Artificial Intelligence Training</h4>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">ICT Authority Kenya · 2026</p>
-              <span className="inline-flex items-center text-sm font-medium text-teal-500">
-                View Certificate
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </span>
-            </a>
-
-            <a 
-              href="/certs/cybersecurity-emerging-trends.jpeg" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
-            >
-              <div className="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              </div>
-              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Cybersecurity & Emerging Trends</h4>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">ICT Authority · Cyber Shujaa · 2026</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">ICT Authority Kenya · July 2026</p>
               <span className="inline-flex items-center text-sm font-medium text-teal-500">
                 View Certificate
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -226,7 +205,28 @@ function Skills() {
                 </svg>
               </div>
               <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Introduction to Cybersecurity Awareness</h4>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">HP LIFE · 2026</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">HP LIFE Foundation · February 2026</p>
+              <span className="inline-flex items-center text-sm font-medium text-teal-500">
+                View Certificate
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </span>
+            </a>
+
+            <a 
+              href="/certs/cybersecurity-emerging-trends.jpeg" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-lg hover:border-teal-500 transition-all duration-300"
+            >
+              <div className="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Cybersecurity & Emerging Trends Training</h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">ICT Authority · Cyber Shujaa · August 2026</p>
               <span className="inline-flex items-center text-sm font-medium text-teal-500">
                 View Certificate
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -247,7 +247,7 @@ function Skills() {
                 </svg>
               </div>
               <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">Critical Thinking in the AI Era</h4>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">HP LIFE · 2026</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">HP LIFE Foundation · February 2026</p>
               <span className="inline-flex items-center text-sm font-medium text-teal-500">
                 View Certificate
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -268,7 +268,7 @@ function Skills() {
                 </svg>
               </div>
               <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-1 group-hover:text-teal-500 transition-colors">BuildWise Innovation Challenge</h4>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">DeKUT DeSIC · 2026</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">DeKUT DeSIC · April 2026</p>
               <span className="inline-flex items-center text-sm font-medium text-teal-500">
                 View Certificate
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

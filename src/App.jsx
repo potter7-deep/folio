@@ -14,10 +14,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950">
+    <div className="min-h-screen app-shell cyber-shell">
       {loading && <StairsLoader onFinish={() => setLoading(false)} />}
 
-      <div className={`transition-opacity duration-500 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+      <div className={`transition-all duration-700 ${loading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
         {/* Header */}
         <header className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-slate-950/80 backdrop-blur-lg z-50 shadow-sm">
           <Header />

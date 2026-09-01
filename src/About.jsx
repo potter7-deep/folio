@@ -31,6 +31,8 @@ function About() {
                   <Typewriter
                     words={[
                       "Full Stack Developer",
+                      "Cyber Security Enthusiast",
+                      "Cloud Computing Specialist",
                       "Mobile App Developer",
                       "Web Developer",
                       "UI/UX Enthusiast"
